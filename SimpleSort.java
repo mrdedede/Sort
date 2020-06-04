@@ -1,6 +1,6 @@
 public class SimpleSort {
 	/**
-	 * This programme implements an application that
+	 * This file implements an application that
 	 * takes an int array in which has basically 3 different kinds of
 	 * elements within (in this case, 0, 1 and 2) and sorts it in a way
 	 * that elements show up in crescent order (from 0 to 2) . 
