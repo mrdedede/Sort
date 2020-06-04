@@ -20,16 +20,18 @@ public class SimpleSort {
 	public static void main(String[]args) {
 		/*
 		 * How does that work?
-		 * 		We will create two variables, one for the position of the last
+		 * 		We will create two varibles with coordinates. One of them will represent the position of the last smallest element (i)
+		 *		and the other one will represent the position of the first biggest element (j).
 		 *  		smallest element and another for the first biggest element.
-		 * 		As we go through the array, we will find some of those wanted elements,
-		 * 		we will swap their position with the one of its respective variable and
-		 * 		and update those values. We will also repeat the same analysis for the same
+		 * 		As we walk through the array, if we notice an element that is from the same group as the smallest ones,
+		 *		we swap its position with the element at i+1 and update its position.
+		 *		The same goes for the biggest ones, but in this case, we swap with the element at (j-1).
+		 *		We will also repeat the same analysis for the same
 		 * 		index once swapped, because we don't want to lose values that, for some
 		 * 		reason may be at the former position of one of those variables.
 		 * 		
 		 * 		Once we are at the same position as the first element of the biggest,
-		 * 		we won't need to worry about sorting anymore, once it is already sorted.
+		 * 		we won't need to worry about sorting anymore, it's already been sorted.
 		 * 
 		 * 		The complexity of this algorithm is O(n)
 		 */
